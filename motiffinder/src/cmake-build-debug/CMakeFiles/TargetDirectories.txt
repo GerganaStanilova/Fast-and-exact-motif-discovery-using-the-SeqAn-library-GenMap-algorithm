@@ -1,3 +1,0 @@
-C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/src/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/src/cmake-build-debug/CMakeFiles/motiffinder.dir
-C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir

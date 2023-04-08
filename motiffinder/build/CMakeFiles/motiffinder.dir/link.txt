@@ -1,1 +1,0 @@
-/usr/bin/c++    -pthread -O3 -DNDEBUG  -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -rdynamic CMakeFiles/motiffinder.dir/motiffinder.cpp.o -o motiffinder  -lrt -lz 
