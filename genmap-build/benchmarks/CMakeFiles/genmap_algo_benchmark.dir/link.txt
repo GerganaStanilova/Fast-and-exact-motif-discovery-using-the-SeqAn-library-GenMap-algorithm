@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wno-unknown-pragmas -O3 -DNDEBUG -flto=2 -rdynamic CMakeFiles/genmap_algo_benchmark.dir/bench.cpp.o -o genmap_algo_benchmark  -L/home/vagrant/code/motiffinder/genmap-build/benchmarks/lib -lbenchmark -lpthread 

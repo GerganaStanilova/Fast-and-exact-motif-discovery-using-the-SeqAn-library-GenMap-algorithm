@@ -1,0 +1,12 @@
+# Target labels
+ googlebenchmark
+# Source files and their labels
+/home/vagrant/code/motiffinder/genmap-build/benchmarks/CMakeFiles/googlebenchmark
+/home/vagrant/code/motiffinder/genmap-build/benchmarks/CMakeFiles/googlebenchmark.rule
+/home/vagrant/code/motiffinder/genmap-build/benchmarks/CMakeFiles/googlebenchmark-complete.rule
+/home/vagrant/code/motiffinder/genmap-build/benchmarks/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-build.rule
+/home/vagrant/code/motiffinder/genmap-build/benchmarks/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-configure.rule
+/home/vagrant/code/motiffinder/genmap-build/benchmarks/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-download.rule
+/home/vagrant/code/motiffinder/genmap-build/benchmarks/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-install.rule
+/home/vagrant/code/motiffinder/genmap-build/benchmarks/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-mkdir.rule
+/home/vagrant/code/motiffinder/genmap-build/benchmarks/googlebenchmark/src/googlebenchmark-stamp/googlebenchmark-patch.rule
