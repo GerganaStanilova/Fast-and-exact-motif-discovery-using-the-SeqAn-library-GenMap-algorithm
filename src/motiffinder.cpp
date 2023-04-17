@@ -533,7 +533,9 @@ void initWh(int& motif_length, pair<int, vector<pair<int,int>>>& bucket, vector<
             Wh[ordValue(sequences[i][u+j])][u]++; //ordValue turns a nt into an int
     }
 
-    float P[4] = {0.25, 0.25, 0.25, 0.25}; //background probability distribution
+    //float P[4] = {0.25, 0.25, 0.25, 0.25}; //background probability distribution
+    float P[4] = {0.314, 0.196, 0.308, 0.182}; //background probability distribution
+
     addBackgroundProbability(P, Wh, motif_length, bucket.second.size());
 }
 
@@ -1060,6 +1062,7 @@ void printPerformanceCoefficient(DnaString pattern) {
 
 
 int main(int argc, char const ** argv) {
+    cout << "GENMAP" << endl;
     program_start = chrono::steady_clock::now();
     noOfThreads = 12;// min(1,(int) thread::hardware_concurrency()-2);
     /*if (argc < 3) {

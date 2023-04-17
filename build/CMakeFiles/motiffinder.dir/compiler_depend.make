@@ -951,7 +951,8 @@ CMakeFiles/motiffinder.dir/motiffinder.cpp.o: /home/vagrant/code/motiffinder/src
   /usr/include/c++/9/experimental/bits/lfts_config.h \
   /usr/include/c++/9/experimental/bits/string_view.tcc \
   /usr/include/c++/9/experimental/bits/fs_dir.h \
-  /usr/include/c++/9/experimental/bits/fs_ops.h
+  /usr/include/c++/9/experimental/bits/fs_ops.h \
+  /usr/include/c++/9/math.h
 
 
 /usr/include/c++/9/experimental/bits/fs_ops.h:
@@ -2321,6 +2322,8 @@ CMakeFiles/motiffinder.dir/motiffinder.cpp.o: /home/vagrant/code/motiffinder/src
 /home/vagrant/code/motiffinder/seqan/include/seqan/align/dp_trace_segment.h:
 
 /home/vagrant/code/motiffinder/seqan/include/seqan/basic/iterator_concept.h:
+
+/usr/include/c++/9/math.h:
 
 /home/vagrant/code/motiffinder/seqan/include/seqan/index/shape_gapped.h:
 

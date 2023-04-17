@@ -412,6 +412,8 @@ CXX17_BUILTIN:INTERNAL=
 CXX17_FLAG:INTERNAL=1
 //Test FILESYSTEM_FLAG_BUILTIN
 FILESYSTEM_FLAG_BUILTIN:INTERNAL=1
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/usr/lib/x86_64-linux-gnu/libz.so][/usr/include][c ][v1.2.11()]
 //Details about finding seqan3

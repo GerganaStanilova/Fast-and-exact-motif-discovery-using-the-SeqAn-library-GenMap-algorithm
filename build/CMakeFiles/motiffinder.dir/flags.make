@@ -6,5 +6,5 @@ CXX_DEFINES = -DSEQAN_HAS_EXECINFO=1 -DSEQAN_HAS_ZLIB=1 -D_FILE_OFFSET_BITS=64 -
 
 CXX_INCLUDES = -I/home/vagrant/code/motiffinder/seqan/include
 
-CXX_FLAGS =    -pthread -O3 -DNDEBUG
+CXX_FLAGS =    -pthread -O3 -DNDEBUG -pthread
 
