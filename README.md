@@ -50,9 +50,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -111,13 +108,23 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    ```sh
    git clone https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm.git
    ```
-3. Install NPM packages
+2. Set the CPP Compiler
+	- for the GenMap Motiffinder
    ```sh
-   npm install
+   /path/to/genmap_motiffinder/build cmake -DCMAKE_BUILD_TYPE=Release ../src
+   ```	
+	- for the Projection Motiffinder
+   ```sh
+   /path/to/projection_motiffinder/build cmake -DCMAKE_BUILD_TYPE=Release ../src
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Compile the file
+   - for the GenMap Motiffinder
+   ```sh
+   /path/to/genmap_motiffinder/build make
+   ```	
+	- for the Projection Motiffinder
+   ```sh
+   /path/to/projection_motiffinder/build make
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
