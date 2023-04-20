@@ -75,8 +75,8 @@ pattern with d mutations in a set of sequences with a fixed length.
 
 This project compares the performance of two algorithms that are given different (l,d)-problems.
 
-One of them uses the <a href="https://github.com/cpockrandt/genmap target="_blank">GenMap algorithm</a>, from the <a href="https://docs.seqan.de/seqan/3-master-dev/index.html target="_blank">SeqAn Library</a> and the other one is the implementation in C++ of the projection-algorithm from the paper 
- <a href="https://pubmed.ncbi.nlm.nih.gov/12015879/ target="_blank">"Finding motifs using random projections"</a> written by J. Buhler and M. Tompa.
+One of them uses the <a href="https://github.com/cpockrandt/genmap" target="_blank">GenMap algorithm</a>, from the <a href="https://docs.seqan.de/seqan/3-master-dev/index.html" target="_blank">SeqAn Library</a> and the other one is the implementation in C++ of the projection-algorithm from the paper 
+ <a href="https://pubmed.ncbi.nlm.nih.gov/12015879/" target="_blank">"Finding motifs using random projections"</a> written by J. Buhler and M. Tompa.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
