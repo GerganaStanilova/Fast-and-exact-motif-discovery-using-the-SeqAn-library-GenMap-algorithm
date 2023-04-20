@@ -18,29 +18,15 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">Finding motifs using random projections</h3>
-
+  
+<h2 align="center">Finding motifs using random projections</h2>
   <p align="center">
     This project uses the GenMap algorithm for motif discovery in DNA sequences.
-    <br />
-    <a href="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm">View Demo</a>
-    ·
-    <a href="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/issues">Report Bug</a>
   </p>
 </div>
 
