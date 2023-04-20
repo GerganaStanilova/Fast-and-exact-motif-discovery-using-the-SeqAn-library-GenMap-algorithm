@@ -109,20 +109,20 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    git clone https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm.git
    ```
 2. Set the CPP Compiler
-	- for the GenMap Motiffinder
+	* for the GenMap Motiffinder
    ```sh
    /path/to/genmap_motiffinder/build cmake -DCMAKE_BUILD_TYPE=Release ../src
    ```	
-	- for the Projection Motiffinder
+	* for the Projection Motiffinder
    ```sh
    /path/to/projection_motiffinder/build cmake -DCMAKE_BUILD_TYPE=Release ../src
    ```
 4. Compile the file
-   - for the GenMap Motiffinder
+   * for the GenMap Motiffinder
    ```sh
    /path/to/genmap_motiffinder/build make
    ```	
-	- for the Projection Motiffinder
+	* for the Projection Motiffinder
    ```sh
    /path/to/projection_motiffinder/build make
    ```
