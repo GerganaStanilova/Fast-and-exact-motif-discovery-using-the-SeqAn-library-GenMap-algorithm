@@ -98,9 +98,8 @@ One of them uses the <a href="https://github.com/cpockrandt/genmap">GenMap algor
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![Next][seqan-logo]]
-* [![seqan-logo][SEQAN3]]
+* [cpp-logo]
+* [seqan-logo]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
@@ -253,3 +252,4 @@ Project Link: [https://github.com/GerganaStanilova/Fast-and-exact-motif-discover
 [JQuery-url]: https://jquery.com 
 [seqan-logo]: https://docs.seqan.de/seqan/3-master-dev/seqan_logo.svg
 [seqan-url]: https://docs.seqan.de/seqan/3-master-dev/index.html
+[cpp-logo]: https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg
