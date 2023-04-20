@@ -45,8 +45,6 @@
     <a href="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm">View Demo</a>
     ·
     <a href="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/issues">Request Feature</a>
   </p>
 </div>
 
@@ -82,8 +80,18 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<br />
+Motif discovery methods are of great significance because they can point to
+meaningful biological conclusions. One application of motif discovery is identi-
+fying DNA regulatory elements. In particular, transcription factor binding sites
+since they are the target of drug therapy given their crucial role in modulating
+transcription mechanisms.
+<br />
+The planted (l,d)-motif search is commonly used as a method for benchmark-
+ing the performance of motif finding algorithms. It hunts for a l-character long
+pattern with d mutations in a set of sequences with a fixed length.
+<br />
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `GerganaStanilova`, `Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
