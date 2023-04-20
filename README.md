@@ -98,7 +98,7 @@ One of them uses the <a href="https://github.com/cpockrandt/genmap">GenMap algor
 
 ### Built With
 
-<img height="50" src="https://docs.seqan.de/seqan/3-master-dev/seqan_logo.svg" /> <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" /> <img height="50" src="https://www.vectorlogo.zone/logos/cmake/cmake-ar21.svg" />
+<img height="50" src="https://docs.seqan.de/seqan/3-master-dev/seqan_logo.svg" /> &nbsp;&nbsp;&nbsp;&nbsp;<img height="50" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" /> <img height="50" src="https://www.vectorlogo.zone/logos/cmake/cmake-ar21.svg" />
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
