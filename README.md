@@ -93,22 +93,8 @@ pattern with d mutations in a set of sequences with a fixed length.
 
 This project compares the performance of two algorithms that are given different (l,d)-problems.
 
-One of them uses the 
-
-<a href="https://github.com/cpockrandt/genmap">GenMap algorithm </a>, developed by 
-
-from the  
-
-<a href="https://docs.seqan.de/seqan/3-master-dev/index.html">SeqAn Library</a>
-
-
-and the other one is the implementation in C++ of the projection-algorithm from the paper 
-
-<a href="https://pubmed.ncbi.nlm.nih.gov/12015879/">"Finding motifs using random projections"</a>
- written by J. Buhler and M. Tompa.
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `GerganaStanilova`, `Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm`, 
-`Fast and exact motif discovery using the SeqAn library GenMap algorithm`, `This project uses the GenMap algorithm for motif discovery in DNA sequences.`
+One of them uses the <a href="https://github.com/cpockrandt/genmap">GenMap algorithm </a>, from the <a href="https://docs.seqan.de/seqan/3-master-dev/index.html">SeqAn Library</a> and the other one is the implementation in C++ of the projection-algorithm from the paper 
+ <a href="https://pubmed.ncbi.nlm.nih.gov/12015879/">"Finding motifs using random projections"</a> written by J. Buhler and M. Tompa.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
