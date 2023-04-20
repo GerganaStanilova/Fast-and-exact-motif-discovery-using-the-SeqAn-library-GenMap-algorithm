@@ -34,7 +34,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Finding motifs using random projections</h3>
 
   <p align="center">
     This project uses the GenMap algorithm for motif discovery in DNA sequences.
@@ -93,7 +93,7 @@ pattern with d mutations in a set of sequences with a fixed length.
 
 This project compares the performance of two algorithms that are given different (l,d)-problems.
 
-One of them uses the <a href="https://github.com/cpockrandt/genmap">GenMap algorithm </a>, from the <a href="https://docs.seqan.de/seqan/3-master-dev/index.html">SeqAn Library</a> and the other one is the implementation in C++ of the projection-algorithm from the paper 
+One of them uses the <a href="https://github.com/cpockrandt/genmap">GenMap algorithm</a>, from the <a href="https://docs.seqan.de/seqan/3-master-dev/index.html">SeqAn Library</a> and the other one is the implementation in C++ of the projection-algorithm from the paper 
  <a href="https://pubmed.ncbi.nlm.nih.gov/12015879/">"Finding motifs using random projections"</a> written by J. Buhler and M. Tompa.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
