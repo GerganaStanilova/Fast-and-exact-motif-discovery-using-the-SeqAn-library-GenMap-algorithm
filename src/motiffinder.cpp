@@ -532,9 +532,12 @@ void initWh(int& motif_length, pair<int, vector<pair<int,int>>>& bucket, vector<
         for (int u = 0; u < motif_length; u++) //calculate the frequencies of the bases at every position u in the l-mers
             Wh[ordValue(sequences[i][u+j])][u]++; //ordValue turns a nt into an int
     }
+    float P[4] = {0.25, 0.25, 0.25, 0.25}; //background probability distribution
+    //float P[4] = {0.1, 0.9, 0.9, 0.1}; //background probability distribution
+    //float P[4] = {0.314, 0.196, 0.308, 0.182}; //background probability distribution ACGT
+    //float P[4] = {0.2, 0.3, 0.3, 0.2}; //background probability distribution ACGT
+    //float P[4] = {0.1, 0.4, 0.4, 0.1}; //background probability distribution ACGT
 
-    //float P[4] = {0.25, 0.25, 0.25, 0.25}; //background probability distribution
-    float P[4] = {0.314, 0.196, 0.308, 0.182}; //background probability distribution
 
     addBackgroundProbability(P, Wh, motif_length, bucket.second.size());
 }
