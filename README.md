@@ -100,6 +100,7 @@ One of them uses the <a href="https://github.com/cpockrandt/genmap">GenMap algor
 
 * [![Next][Next.js]][Next-url]
 * [![Next][seqan-logo]]
+* [![seqan-logo][SEQAN3]]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
