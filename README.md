@@ -24,9 +24,9 @@
 <br />
 <div align="center">
   
-<h2 align="center">Finding motifs using random projections</h2>
+<h2 align="center">Fast and exact motif discovery using the SeqAn library GenMap algorithm</h2>
   <p align="center">
-    This project uses the GenMap algorithm for motif discovery in DNA sequences.
+    Finding transcription factor binding sites in protomer regions of gene families.
   </p>
 </div>
 
