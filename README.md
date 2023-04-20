@@ -134,13 +134,13 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To run the program with synthetic data, execute:
+* To run the program with synthetic data, execute:
 
    ```sh
    /path/to/build ./motiffinder ../path/to/the/synthetic/fasta/files  ../path/to/the/parameters/csv/file  ../path/to/the/correct/results/csv/files  numberofdatasets
    ```
    
-For example to run the program with 10 datasets in which there are hidden motifs with length 10 containing mutations with up to 2 mismatches, execute:
+* For example to run the program with 10 datasets in which there are hidden motifs with length 10 containing mutations with up to 2 mismatches, execute:
 
     ```sh
    /path/to/build ./motiffinder ../datasets/10-2/syn_synthetic_data_10_2.fasta ../datasets/10-2/parameters_10_2.csv ../datasets/10-2/syn_planted_motif_10_2.csv 10
@@ -153,7 +153,7 @@ For example to run the program with 10 datasets in which there are hidden motifs
 
 
 
-To run the program with biological data, execute:
+* To run the program with biological data, execute:
 
    ```sh
    /path/to/build ./motiffinder ../path/to/the/synthetic/fasta/file  ../path/to/the/parameters/csv/file 
