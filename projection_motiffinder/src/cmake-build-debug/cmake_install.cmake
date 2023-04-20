@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/src
+# Install script for directory: C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/projection_motiffinder/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/src/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/projection_motiffinder/src/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

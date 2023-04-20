@@ -6,5 +6,5 @@ CXX_DEFINES = -DNOMINMAX -DSEQAN_HAS_EXECINFO=0 -D_FILE_OFFSET_BITS=64 -D_LARGEF
 
 CXX_INCLUDES = @CMakeFiles/motiffinder.dir/includes_CXX.rsp
 
-CXX_FLAGS =    -fno-omit-frame-pointer  -pthread -g
+CXX_FLAGS =    -fno-omit-frame-pointer -pthread -g
 

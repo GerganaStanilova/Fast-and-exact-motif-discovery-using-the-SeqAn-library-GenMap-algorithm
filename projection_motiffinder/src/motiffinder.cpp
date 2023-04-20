@@ -572,5 +572,5 @@ int main(int argc, char const ** argv) {
     chrono::steady_clock::time_point program_end = chrono::steady_clock::now();
     vector<int> time_passed = secondsToHours(chrono::duration_cast<chrono::seconds>(program_end-program_start).count());
     cout << "Execution of program finished after (hh:mm:ss) " << timeVectorToString(time_passed) << "." << endl;
-    return 0; // execution successful
+    return 0; // execution successful test
 }

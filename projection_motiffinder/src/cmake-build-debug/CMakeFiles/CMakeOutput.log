@@ -265,3 +265,55 @@ Source file was:
     #error NOCXX14
     #endif
     int main() {}
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/projection_motiffinder/src/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_8a75d/fast && C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8a75d.dir\build.make CMakeFiles/cmTC_8a75d.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/projection_motiffinder/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8a75d.dir/CheckIncludeFile.cxx.obj
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE    -o CMakeFiles\cmTC_8a75d.dir\CheckIncludeFile.cxx.obj -c C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx
+Linking CXX executable cmTC_8a75d.exe
+"C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8a75d.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_8a75d.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc CMakeFiles\cmTC_8a75d.dir/objects.a @CMakeFiles\cmTC_8a75d.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE -Wl,--whole-archive CMakeFiles\cmTC_8a75d.dir/objects.a -Wl,--no-whole-archive -o cmTC_8a75d.exe -Wl,--out-implib,libcmTC_8a75d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8a75d.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/projection_motiffinder/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/projection_motiffinder/src/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_e477e/fast && C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e477e.dir\build.make CMakeFiles/cmTC_e477e.dir/build
+mingw32-make[1]: Entering directory 'C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/projection_motiffinder/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e477e.dir/src.cxx.obj
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\cmTC_e477e.dir\src.cxx.obj -c C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx
+Linking CXX executable cmTC_e477e.exe
+"C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e477e.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_e477e.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc CMakeFiles\cmTC_e477e.dir/objects.a @CMakeFiles\cmTC_e477e.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE -Wl,--whole-archive CMakeFiles\cmTC_e477e.dir/objects.a -Wl,--no-whole-archive -o cmTC_e477e.exe -Wl,--out-implib,libcmTC_e477e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e477e.dir\linklibs.rsp
+mingw32-make[1]: Leaving directory 'C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/projection_motiffinder/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

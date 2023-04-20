@@ -53,10 +53,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\src
+CMAKE_SOURCE_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\src\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/motiffinder.dir/clean
 CMakeFiles/motiffinder.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\motiffinder.dir\build.make CMakeFiles/motiffinder.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\motiffinder.dir\build.make CMakeFiles/motiffinder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\src\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target motiffinder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target motiffinder"
 .PHONY : CMakeFiles/motiffinder.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motiffinder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\src\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/motiffinder.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\src\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/motiffinder.dir/rule
 
 # Convenience name for target.

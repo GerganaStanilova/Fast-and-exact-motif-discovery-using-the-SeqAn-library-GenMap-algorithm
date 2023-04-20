@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/src/motiffinder.cpp" "CMakeFiles/motiffinder.dir/motiffinder.cpp.obj" "gcc" "CMakeFiles/motiffinder.dir/motiffinder.cpp.obj.d"
+  "C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/projection_motiffinder/src/motiffinder.cpp" "CMakeFiles/motiffinder.dir/motiffinder.cpp.obj" "gcc" "CMakeFiles/motiffinder.dir/motiffinder.cpp.obj.d"
   )
 
 # Targets to which this target links.
