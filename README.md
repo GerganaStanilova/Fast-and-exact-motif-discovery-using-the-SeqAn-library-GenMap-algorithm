@@ -98,8 +98,8 @@ One of them uses the <a href="https://github.com/cpockrandt/genmap">GenMap algor
 
 ### Built With
 
-* [cpp-logo]
-* [seqan-logo]
+* ![cpp-logo]
+* ![seqan-logo]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
