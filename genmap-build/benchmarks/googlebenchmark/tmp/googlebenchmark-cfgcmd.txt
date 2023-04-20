@@ -1,1 +1,0 @@
-cmd='/snap/cmake/1005/bin/cmake;-DBENCHMARK_ENABLE_TESTING=false;-DCMAKE_BUILD_TYPE=Release;-DCMAKE_INSTALL_PREFIX=/home/vagrant/code/motiffinder/genmap-build/benchmarks;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

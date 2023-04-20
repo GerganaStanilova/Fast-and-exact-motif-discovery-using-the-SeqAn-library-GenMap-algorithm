@@ -4,6 +4,9 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/genmap" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/genmap/include/seqan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/genmap_motiffinder/genmap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/genmap_motiffinder/genmap/include/seqan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/genmap_motiffinder/seqan" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/seqan" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/seqan3" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/seqan3/submodules/cereal" vcs="Git" />
