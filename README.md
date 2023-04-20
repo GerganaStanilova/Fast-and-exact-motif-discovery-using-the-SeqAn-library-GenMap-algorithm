@@ -100,15 +100,16 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+
+Install SeqAn3 following the instructions on the SeqAn <a href=" https://docs.seqan.de/seqan/3-master-dev/usergroup0.html" target="_blank" rel="noopener noreferrer">Setup page</a>.
+
+Install GenMap following the instructions on the <a href="https://github.com/cpockrandt/genmap#installation" target="_blank" rel="noopener noreferrer">Github Page</a>.
+
+
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm.git
    ```
