@@ -1,0 +1,12 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/vagrant/code/motiffinder/genmap-build/tests/CMakeFiles/googletest
+/home/vagrant/code/motiffinder/genmap-build/tests/CMakeFiles/googletest.rule
+/home/vagrant/code/motiffinder/genmap-build/tests/CMakeFiles/googletest-complete.rule
+/home/vagrant/code/motiffinder/genmap-build/tests/googletest/src/googletest-stamp/googletest-build.rule
+/home/vagrant/code/motiffinder/genmap-build/tests/googletest/src/googletest-stamp/googletest-configure.rule
+/home/vagrant/code/motiffinder/genmap-build/tests/googletest/src/googletest-stamp/googletest-download.rule
+/home/vagrant/code/motiffinder/genmap-build/tests/googletest/src/googletest-stamp/googletest-install.rule
+/home/vagrant/code/motiffinder/genmap-build/tests/googletest/src/googletest-stamp/googletest-mkdir.rule
+/home/vagrant/code/motiffinder/genmap-build/tests/googletest/src/googletest-stamp/googletest-patch.rule

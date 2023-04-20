@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="motiffinder"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\seqan\;CMake Files\..\seqan\util\;CMake Files\..\seqan\util\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="motiffinder">
+				<Option output="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/motiffinder.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_FILE_OFFSET_BITS=64"/>
+					<Add option="-DNOMINMAX"/>
+					<Add option="-DSEQAN_HAS_EXECINFO=0"/>
+					<Add directory="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/seqan/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 motiffinder"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="motiffinder/fast">
+				<Option output="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/motiffinder.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_LARGEFILE_SOURCE"/>
+					<Add option="-D_FILE_OFFSET_BITS=64"/>
+					<Add option="-DNOMINMAX"/>
+					<Add option="-DSEQAN_HAS_EXECINFO=0"/>
+					<Add directory="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/seqan/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 motiffinder/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/motiffinder.cpp">
+			<Option target="motiffinder"/>
+		</Unit>
+		<Unit filename="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/../seqan/util/cmake/FindSeqAn.cmake">
+			<Option virtualFolder="CMake Files\..\seqan\util\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/genmap_motiffinder/src/../seqan/util/cmake/seqan-config.cmake">
+			<Option virtualFolder="CMake Files\..\seqan\util\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
