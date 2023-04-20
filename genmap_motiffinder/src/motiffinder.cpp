@@ -1083,7 +1083,7 @@ int main(int argc, char const ** argv) {
 		ftpos = plantedMotifFilename.find(".csv");
 		if(ftpos == -1) {cerr << "invalid planted motif file. Filename has to end with .csv"; return -1;}
 		pmName = plantedMotifFilename.substr(0, ftpos);
-	}*/
+	}*/ // hello
 
     if (argc < 5) {
         cerr << "Not enough arguments, expected are at least 4: algorithm (either genmap or projection), nth largest frequency (used in genmap), genome-file (in fasta) and parameters file (in csv). "
