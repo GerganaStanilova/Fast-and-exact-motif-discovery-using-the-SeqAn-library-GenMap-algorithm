@@ -100,6 +100,9 @@ One of them uses the <a href="https://github.com/cpockrandt/genmap">GenMap algor
 
 * ![cpp-logo]
 * ![seqan-logo]
+
+<img height="32" width="32" src="https://docs.seqan.de/seqan/3-master-dev/seqan_logo.svg" />
+<img height="32" width="32" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" />
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
