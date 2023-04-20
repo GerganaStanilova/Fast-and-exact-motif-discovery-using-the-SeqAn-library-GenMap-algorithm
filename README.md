@@ -24,7 +24,7 @@
 <br />
 <div align="center">
   
-<h2 align="center">Fast and exact motif discovery using the SeqAn library GenMap algorithm</h2>
+<h1 align="center">Fast and exact motif discovery using the SeqAn library GenMap algorithm</h1>
   <p align="center">
     Finding transcription factor binding sites in protomer regions of gene families.
   </p>
