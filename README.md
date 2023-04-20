@@ -19,10 +19,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -103,6 +99,7 @@ One of them uses the <a href="https://github.com/cpockrandt/genmap">GenMap algor
 ### Built With
 
 * [![Next][Next.js]][Next-url]
+* [![Next][seqan-logo]]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
@@ -253,3 +250,5 @@ Project Link: [https://github.com/GerganaStanilova/Fast-and-exact-motif-discover
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[seqan-logo]: https://docs.seqan.de/seqan/3-master-dev/seqan_logo.svg
+[seqan-url]: https://docs.seqan.de/seqan/3-master-dev/index.html
