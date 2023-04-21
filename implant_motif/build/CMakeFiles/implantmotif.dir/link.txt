@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread -O3 -DNDEBUG  -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -rdynamic CMakeFiles/implantmotif.dir/implantmotif.cpp.o -o implantmotif  -lrt -lz 
