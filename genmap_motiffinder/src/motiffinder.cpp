@@ -1063,7 +1063,7 @@ int main(int argc, char const ** argv) {
     cout << "GENMAP" << endl;
     program_start = chrono::steady_clock::now();
     noOfThreads = 12;// min(1,(int) thread::hardware_concurrency()-2);
-    /*if (argc < 3) {
+    if (argc < 3) {
         cerr << "Not enough arguments, expected are at least 2: genome-file (in fasta) and parameters file (in csv). "
         		"Optional parameters are: planted motiff file (in csv) and amount of datasets (integer).\n";
         return -1;
@@ -1083,36 +1083,7 @@ int main(int argc, char const ** argv) {
 		ftpos = plantedMotifFilename.find(".csv");
 		if(ftpos == -1) {cerr << "invalid planted motif file. Filename has to end with .csv"; return -1;}
 		pmName = plantedMotifFilename.substr(0, ftpos);
-	}*/ // hello
-
-    if (argc < 5) {
-        cerr << "Not enough arguments, expected are at least 4: algorithm (either genmap or projection), nth largest frequency (used in genmap), genome-file (in fasta) and parameters file (in csv). "
-                "Optional parameters are: planted motiff file (in csv) and amount of datasets (integer).\n";
-        return -1;
-    }
-    string algorithm(argv[1]);
-
-    int nth_largest_frequency = stoi(argv[2]);
-
-    string fastaFilename(argv[3]);
-    size_t lastSlash = fastaFilename.find_last_of("/");
-    string file_path = fastaFilename.substr(0, lastSlash);
-    string filenameOnly = fastaFilename.substr(lastSlash+1);
-    size_t ftpos0 = filenameOnly.find(".fasta");
-    string file_without_suffix = filenameOnly.substr(0, ftpos0);
-    size_t ftpos = fastaFilename.find(".fasta");
-    if(ftpos == -1) {cerr << "invalid fasta file. Filename has to end with .fasta"; return -1;}
-    string datasetName = fastaFilename.substr(0, ftpos);
-
-
-
-    string parametersFile(argv[4]), plantedMotifFilename, pmName;
-    if(argc > 5) {
-        plantedMotifFilename = string(argv[5]);
-        ftpos = plantedMotifFilename.find(".csv");
-        if(ftpos == -1) {cerr << "invalid planted motif file. Filename has to end with .csv"; return -1;}
-        pmName = plantedMotifFilename.substr(0, ftpos);
-    }
+	}
 
     ifstream file2(parametersFile);
     if(file2.good()) parameters = csvParseIntoVector(file2, '\t', 1);
@@ -1126,9 +1097,7 @@ int main(int argc, char const ** argv) {
     m = stoi(parameters[0][4]);//calculate the optimal number of trials m;
     datasets = 1;
 
-    /*if(argc == 5) datasets = stoi(argv[4]);
-    string no = "";*/
-    if(argc == 7) datasets = stoi(argv[6]);
+    if(argc == 5) datasets = stoi(argv[4]);
     string no = "";
 
 
@@ -1138,8 +1107,7 @@ int main(int argc, char const ** argv) {
     for(int i = 1; i <= datasets; i++) {
         tmp_round = i;
         chrono::steady_clock::time_point dataset_start = chrono::steady_clock::now();
-        //if(argc == 5) no = "_" + to_string(i);
-        if(argc == 7) no = "_" + to_string(i);
+        if(argc == 5) no = "_" + to_string(i);
 
         //use the fai file to get the content of the fasta file
         FaiIndex faiIndex;
@@ -1158,16 +1126,12 @@ int main(int argc, char const ** argv) {
         if (!open(faiIndex, (datasetName + no + ".fasta").c_str()))
             cout << "ERROR: Could not load FAI index " << (datasetName + no + ".fasta.fai").c_str() << "\n";
 
-        /*if(argc > 3) {
-            ifstream file(pmName + no + ".csv");
-            if(file.good()) pm = csvParseIntoVector(file, '\t', 1);
-            else { cerr << "Planted motif file not found or not readable \n"; return -1; }
-        }*/
-        if(argc > 5) {
+        if(argc > 3) {
             ifstream file(pmName + no + ".csv");
             if(file.good()) pm = csvParseIntoVector(file, '\t', 1);
             else { cerr << "Planted motif file not found or not readable \n"; return -1; }
         }
+
 
 
 
@@ -1186,21 +1150,19 @@ int main(int argc, char const ** argv) {
 
 
             //for genmap create a fasta-file for every sequence in the dataset
-            if (algorithm == "genmap") {
 
-                string mkdirr = "mkdir -p ./genmap_fasta_files/genmap_" + file_without_suffix + no;
-                const int dir_error = system(mkdirr.c_str());
-                if (-1 == dir_error)
-                {
-                    printf("Error creating subdirectory!n");
-                    exit(1);
-                }
-                string fasta_file_line_name = "./genmap_fasta_files/genmap_" + file_without_suffix + no + "/" + file_without_suffix + no + "_" + to_string(idx+1) + ".fasta";
-                cout << fasta_file_line_name << endl;
-                ofstream file(fasta_file_line_name);
-                file << ">seq0" << "\n" << seq_in_file;
 
+            string mkdirr = "mkdir -p ./genmap_fasta_files/genmap_" + file_without_suffix + no;
+            const int dir_error = system(mkdirr.c_str());
+            if (-1 == dir_error)
+            {
+                printf("Error creating subdirectory!n");
+                exit(1);
             }
+            string fasta_file_line_name = "./genmap_fasta_files/genmap_" + file_without_suffix + no + "/" + file_without_suffix + no + "_" + to_string(idx+1) + ".fasta";
+            cout << fasta_file_line_name << endl;
+            ofstream file(fasta_file_line_name);
+            file << ">seq0" << "\n" << seq_in_file;
 
         }
 
@@ -1213,29 +1175,27 @@ int main(int argc, char const ** argv) {
         vector<pair<int,int>> lmers_contained_in_many_files;
 
         int min_no_of_files = num_of_seqs*0.2;
-        if (algorithm == "genmap"){
-            for(unsigned idx = 0; idx < num_of_seqs; idx++){
-                string folder_with_fasta_file_lines_filename = "genmap_" + file_without_suffix + no + "_" + to_string(idx+1);
-                vector<uint8_t> frequency_vector_freq8 = getGenMapFrequencyVectorOPS(folder_with_fasta_file_lines, folder_with_fasta_file_lines_filename, l, d);
-                vector<int> frequency_vector_int = covertFreqVecToIntVec(frequency_vector_freq8);
+        for(unsigned idx = 0; idx < num_of_seqs; idx++){
+            string folder_with_fasta_file_lines_filename = "genmap_" + file_without_suffix + no + "_" + to_string(idx+1);
+            vector<uint8_t> frequency_vector_freq8 = getGenMapFrequencyVectorOPS(folder_with_fasta_file_lines, folder_with_fasta_file_lines_filename, l, d);
+            vector<int> frequency_vector_int = covertFreqVecToIntVec(frequency_vector_freq8);
 
-                //saveLmerIfInMinNoOfFiles(frequency_vector_freq8, lmers_contained_in_many_files, idx, min_no_of_files);
-                for (int j = 0; j < length(frequency_vector_freq8); j++) {
-                    if(frequency_vector_freq8[j] >= min_no_of_files) {
-                        lmers_contained_in_many_files.push_back(pair<int,int>(idx,j));
-                    }
+            //saveLmerIfInMinNoOfFiles(frequency_vector_freq8, lmers_contained_in_many_files, idx, min_no_of_files);
+            for (int j = 0; j < length(frequency_vector_freq8); j++) {
+                if(frequency_vector_freq8[j] >= min_no_of_files) {
+                    lmers_contained_in_many_files.push_back(pair<int,int>(idx,j));
                 }
             }
         }
 
+
         bool proj = false;
-        if (algorithm == "projection") proj = true;
 
         chrono::steady_clock::time_point start = chrono::steady_clock::now();
 
 
         //DnaString pattern = proj ? runProjection() : runGenMap(l, genmap_frequency_vector, length(sequences), length(sequences[0]), sequences, nth_largest_frequency);
-        DnaString pattern = proj ? runProjection() : runGenMap2(l, lmers_contained_in_many_files, length(sequences), length(sequences[0]), sequences);
+        DnaString pattern = runGenMap2(l, lmers_contained_in_many_files, length(sequences), length(sequences[0]), sequences);
         if(length(pattern) == 0) return -4; // No sequences in any bucket
         chrono::steady_clock::time_point end = chrono::steady_clock::now();
         times.push_back(chrono::duration_cast<chrono::milliseconds>(end - start).count() / m);
