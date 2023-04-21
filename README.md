@@ -121,6 +121,10 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    ```sh
    /path/to/create_datasets/build cmake -DCMAKE_BUILD_TYPE=Release ../src
    ```
+   * for implanting a motif in random sequences
+   ```sh
+   /path/to/implant_motif/build cmake -DCMAKE_BUILD_TYPE=Release ../src
+   ```
    
 4. Compile the file
    * for the GenMap Motiffinder
@@ -135,7 +139,10 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    ```sh
    /path/to/create_datasets/build make
    ```
-
+	* for implanting a motif in random sequences
+   ```sh
+   /path/to/implant_motif/build make
+   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -199,7 +206,7 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
 * In order to test the program with real biological motif, run the program implantmotif.cpp with the motif you want implanted as the first argument:
 
 	```sh
-   /path/to/build ./implantmotif t n motif 
+   /path/to/implant_motif/build ./implantmotif t n motif 
    ```
    
    where t is the number of the sequences, n is the length of one sequence, and motif is the sequence you want implanted.
