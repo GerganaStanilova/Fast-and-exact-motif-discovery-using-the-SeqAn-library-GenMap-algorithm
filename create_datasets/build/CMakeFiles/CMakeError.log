@@ -1,0 +1,143 @@
+Performing C++ SOURCE FILE Test CXX17_BUILTIN failed with the following output:
+Change Dir: /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a36cd/fast && make: Warning: File 'Makefile' has modification time 0.31 s in the future
+/usr/bin/make  -f CMakeFiles/cmTC_a36cd.dir/build.make CMakeFiles/cmTC_a36cd.dir/build
+make[1]: Entering directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_a36cd.dir/flags.make' has modification time 0.31 s in the future
+Building CXX object CMakeFiles/cmTC_a36cd.dir/src.cxx.o
+/usr/bin/c++ -DCXX17_BUILTIN -I/home/vagrant/code/motiffinder/seqan3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/sdsl-lite/include -I/home/vagrant/code/motiffinder/seqan3/submodules/range-v3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/cereal/include  -o CMakeFiles/cmTC_a36cd.dir/src.cxx.o -c /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/src.cxx
+/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/src.cxx:2:6: error: #error NOCXX17
+    2 |     #error NOCXX17
+      |      ^~~~~
+make[1]: *** [CMakeFiles/cmTC_a36cd.dir/build.make:78: CMakeFiles/cmTC_a36cd.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_a36cd/fast] Error 2
+
+
+Source file was:
+#if !defined (__cplusplus) || (__cplusplus < 201703L)
+    #error NOCXX17
+    #endif
+    int main() {}
+Performing C++ SOURCE FILE Test CONCEPTS_FLAG_BUILTIN failed with the following output:
+Change Dir: /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e018b/fast && make: Warning: File 'Makefile' has modification time 0.32 s in the future
+/usr/bin/make  -f CMakeFiles/cmTC_e018b.dir/build.make CMakeFiles/cmTC_e018b.dir/build
+make[1]: Entering directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_e018b.dir/flags.make' has modification time 0.31 s in the future
+Building CXX object CMakeFiles/cmTC_e018b.dir/src.cxx.o
+/usr/bin/c++ -DCONCEPTS_FLAG_BUILTIN -I/home/vagrant/code/motiffinder/seqan3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/sdsl-lite/include -I/home/vagrant/code/motiffinder/seqan3/submodules/range-v3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/cereal/include -std=c++17 -o CMakeFiles/cmTC_e018b.dir/src.cxx.o -c /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/src.cxx
+/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/src.cxx:1:16: error: ‘__cpp_concepts’ was not declared in this scope
+    1 | static_assert (__cpp_concepts >= 201507);
+      |                ^~~~~~~~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_e018b.dir/build.make:78: CMakeFiles/cmTC_e018b.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_e018b/fast] Error 2
+
+
+Source file was:
+static_assert (__cpp_concepts >= 201507);
+    int main() {}
+Performing C++ SOURCE FILE Test CONCEPTS_FLAG_STD20 failed with the following output:
+Change Dir: /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_70b7e/fast && make: Warning: File 'Makefile' has modification time 0.32 s in the future
+/usr/bin/make  -f CMakeFiles/cmTC_70b7e.dir/build.make CMakeFiles/cmTC_70b7e.dir/build
+make[1]: Entering directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_70b7e.dir/flags.make' has modification time 0.31 s in the future
+Building CXX object CMakeFiles/cmTC_70b7e.dir/src.cxx.o
+/usr/bin/c++ -DCONCEPTS_FLAG_STD20 -I/home/vagrant/code/motiffinder/seqan3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/sdsl-lite/include -I/home/vagrant/code/motiffinder/seqan3/submodules/range-v3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/cereal/include -std=c++17 -std=c++20 -o CMakeFiles/cmTC_70b7e.dir/src.cxx.o -c /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option ‘-std=c++20’; did you mean ‘-std=c++2a’?
+make[1]: *** [CMakeFiles/cmTC_70b7e.dir/build.make:78: CMakeFiles/cmTC_70b7e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_70b7e/fast] Error 2
+
+
+Source file was:
+static_assert (__cpp_concepts >= 201507);
+    int main() {}
+Performing C++ SOURCE FILE Test CONCEPTS_FLAG_STD2a failed with the following output:
+Change Dir: /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_64f8d/fast && make: Warning: File 'Makefile' has modification time 0.31 s in the future
+/usr/bin/make  -f CMakeFiles/cmTC_64f8d.dir/build.make CMakeFiles/cmTC_64f8d.dir/build
+make[1]: Entering directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_64f8d.dir/flags.make' has modification time 0.3 s in the future
+Building CXX object CMakeFiles/cmTC_64f8d.dir/src.cxx.o
+/usr/bin/c++ -DCONCEPTS_FLAG_STD2a -I/home/vagrant/code/motiffinder/seqan3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/sdsl-lite/include -I/home/vagrant/code/motiffinder/seqan3/submodules/range-v3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/cereal/include -std=c++17 -std=c++2a -o CMakeFiles/cmTC_64f8d.dir/src.cxx.o -c /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/src.cxx
+/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/src.cxx:1:16: error: ‘__cpp_concepts’ was not declared in this scope
+    1 | static_assert (__cpp_concepts >= 201507);
+      |                ^~~~~~~~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_64f8d.dir/build.make:78: CMakeFiles/cmTC_64f8d.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_64f8d/fast] Error 2
+
+
+Source file was:
+static_assert (__cpp_concepts >= 201507);
+    int main() {}
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_86fc0/fast && make: Warning: File 'Makefile' has modification time 0.31 s in the future
+/usr/bin/make  -f CMakeFiles/cmTC_86fc0.dir/build.make CMakeFiles/cmTC_86fc0.dir/build
+make[1]: Entering directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_86fc0.dir/flags.make' has modification time 0.3 s in the future
+Building CXX object CMakeFiles/cmTC_86fc0.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD -I/home/vagrant/code/motiffinder/seqan3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/sdsl-lite/include -I/home/vagrant/code/motiffinder/seqan3/submodules/range-v3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/cereal/include -std=c++17 -o CMakeFiles/cmTC_86fc0.dir/src.cxx.o -c /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_86fc0
+/snap/cmake/936/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86fc0.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++17 CMakeFiles/cmTC_86fc0.dir/src.cxx.o -o cmTC_86fc0 
+/usr/bin/ld: CMakeFiles/cmTC_86fc0.dir/src.cxx.o: in function `main':
+src.cxx:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.cxx:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.cxx:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.cxx:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_86fc0.dir/build.make:99: cmTC_86fc0] Error 1
+make[1]: Leaving directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_86fc0/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file lemon/config.h exists failed with the following output:
+Change Dir: /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ece5f/fast && make: Warning: File 'Makefile' has modification time 0.3 s in the future
+/usr/bin/make  -f CMakeFiles/cmTC_ece5f.dir/build.make CMakeFiles/cmTC_ece5f.dir/build
+make[1]: Entering directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make[1]: Warning: File 'CMakeFiles/cmTC_ece5f.dir/flags.make' has modification time 0.3 s in the future
+Building CXX object CMakeFiles/cmTC_ece5f.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++  -I/home/vagrant/code/motiffinder/seqan3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/sdsl-lite/include -I/home/vagrant/code/motiffinder/seqan3/submodules/range-v3/include -I/home/vagrant/code/motiffinder/seqan3/submodules/cereal/include -std=c++17 -o CMakeFiles/cmTC_ece5f.dir/CheckIncludeFile.cxx.o -c /home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: lemon/config.h: No such file or directory
+    1 | #include <lemon/config.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_ece5f.dir/build.make:78: CMakeFiles/cmTC_ece5f.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/vagrant/code/motiffinder/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_ece5f/fast] Error 2
+
+
+

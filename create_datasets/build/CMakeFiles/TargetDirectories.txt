@@ -1,0 +1,3 @@
+/home/vagrant/code/motiffinder/projection_motiffinder/build/CMakeFiles/motiffinder.dir
+/home/vagrant/code/motiffinder/projection_motiffinder/build/CMakeFiles/edit_cache.dir
+/home/vagrant/code/motiffinder/projection_motiffinder/build/CMakeFiles/rebuild_cache.dir
