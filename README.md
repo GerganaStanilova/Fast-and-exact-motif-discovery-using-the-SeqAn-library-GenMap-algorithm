@@ -159,6 +159,12 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    ```sh
    /path/to/build ./motiffinder ../path/to/the/synthetic/fasta/file  ../path/to/the/parameters/csv/file 
    ```
+   
+* An example with the GCN4 promoter regions would look like this:
+
+	```sh
+   /path/to/build ./motiffinder ../datasets/GCN4_promoters/GCN4_promoter_regions.fasta ../datasets/parameters_10_2.csv
+   ```
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
