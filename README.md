@@ -146,8 +146,9 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    /path/to/build ./motiffinder ../datasets/10-2/syn_synthetic_data_10_2.fasta ../datasets/10-2/parameters_10_2.csv ../datasets/10-2/syn_planted_motif_10_2.csv 10
    ```
 
-
-
+	This screenshot shows the last part of the output after executing the last command:
+	
+	<img src="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/blob/master/images/genmap_example.png" />
 
 
 
