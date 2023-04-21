@@ -15,9 +15,75 @@
 #include <seqan/stream.h>
 #include <seqan/file.h>
 #include <seqan/modifier.h>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <sstream>
 
 using namespace std;
 using namespace seqan;
+
+vector<vector<double>> normalizeMatrix(const vector<vector<double>>& matrix) {
+    // Find the maximum value in the matrix
+    double maxVal = matrix[0][0];
+    for (int i = 0; i < matrix.size(); i++) {
+        for (int j = 0; j < matrix[i].size(); j++) {
+            if (matrix[i][j] > maxVal) {
+                maxVal = matrix[i][j];
+            }
+        }
+    }
+
+    // Normalize the matrix by dividing each element by the maximum value
+    vector<vector<double>> normalizedMatrix;
+    for (int i = 0; i < matrix.size(); i++) {
+        vector<double> row;
+        for (int j = 0; j < matrix[i].size(); j++) {
+            row.push_back(matrix[i][j] / maxVal);
+        }
+        normalizedMatrix.push_back(row);
+    }
+
+    return normalizedMatrix;
+}
+
+void printMatrix(const vector<vector<double>>& matrix) {
+    for (int i = 0; i < matrix.size(); i++) {
+        for (int j = 0; j < matrix[i].size(); j++) {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+//Function to generate a randomized string based on the input matrix
+std::string generateRandomString(std::vector<std::vector<double>>& matrix) {
+    std::string dnaString;
+    std::random_device rd;
+    std::mt19937 gen(rd());
+
+    for (int i = 0; i < matrix[0].size(); i++) {
+        std::vector<double> probabilities = {matrix[0][i], matrix[1][i], matrix[2][i], matrix[3][i]};
+        std::discrete_distribution<int> distribution(probabilities.begin(), probabilities.end());
+        char nucleotide;
+        switch (distribution(gen)) {
+            case 0:
+                nucleotide = 'A';
+                break;
+            case 1:
+                nucleotide = 'C';
+                break;
+            case 2:
+                nucleotide = 'G';
+                break;
+            case 3:
+                nucleotide = 'T';
+                break;
+        }
+        dnaString += nucleotide;
+    }
+    return dnaString;
+}
 
 bool freePos(int& i, vector<int>& p) {
     for(int a : p)
@@ -41,6 +107,23 @@ int main(int argc, char const ** argv)
 {
 
 
+    vector<vector<double>> gcn4_jaspar_matrix = {
+            {30, 45, 0, 1, 87, 0, 1, 7, 82, 6, 16},
+            {15, 15, 0, 0, 0, 62, 0, 78, 3, 20, 31},
+            {26, 19, 0, 84, 2, 28, 2, 5, 2, 13, 13},
+            {19, 11, 90, 5, 1, 0, 87, 0, 3, 51, 30}
+    };
+
+    vector<vector<double>> normalized_gcn4_jaspar_matrix = normalizeMatrix(gcn4_jaspar_matrix);
+
+    printMatrix(normalized_gcn4_jaspar_matrix);
+
+    // Generate 20 randomized DNA strings based on the input matrix
+    for (int i = 0; i < 20; i++) {
+        std::string randomString = generateRandomString(normalized_gcn4_jaspar_matrix);
+        std::cout << randomString << std::endl;
+    }
+
     //t sequences each of length n
     int t = stoi(argv[1]);
     int n = stoi(argv[2]);
@@ -53,6 +136,10 @@ int main(int argc, char const ** argv)
     //int motif_length = 11; //l
     //int d = 2;
 
+
+
+
+    /*
     //for the sake of reproducibility
     std::mt19937 rng;
 
@@ -151,6 +238,6 @@ int main(int argc, char const ** argv)
     
     //fastaFile << "Writing this to a file.\n";
     fastaFile.close();
-    planted_motif_File.close();
+    planted_motif_File.close();*/
     return 0;
 }

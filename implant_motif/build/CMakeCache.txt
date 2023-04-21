@@ -131,7 +131,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=createdatasets
+CMAKE_PROJECT_NAME:STATIC=implantmotif
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -248,6 +248,15 @@ createdatasets_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 createdatasets_SOURCE_DIR:STATIC=/home/vagrant/code/motiffinder/implant_motif/src
+
+//Value Computed by CMake
+implantmotif_BINARY_DIR:STATIC=/home/vagrant/code/motiffinder/implant_motif/build
+
+//Value Computed by CMake
+implantmotif_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+implantmotif_SOURCE_DIR:STATIC=/home/vagrant/code/motiffinder/implant_motif/src
 
 //Value Computed by CMake
 motiffinder_BINARY_DIR:STATIC=/home/vagrant/code/motiffinder/implant_motif/build

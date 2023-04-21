@@ -209,7 +209,7 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    /path/to/implant_motif/build ./implantmotif t n motif 
    ```
    
-   where t is the number of the sequences, n is the length of one sequence, and motif is the sequence you want implanted.
+   where t is the number of the sequences, n is the length of one sequence, and motif is the sequence to be implanted.
    
    
    

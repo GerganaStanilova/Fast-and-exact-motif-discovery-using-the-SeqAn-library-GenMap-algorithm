@@ -57,10 +57,10 @@ RM = /snap/cmake/1288/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vagrant/code/motiffinder/create_datasets/src
+CMAKE_SOURCE_DIR = /home/vagrant/code/motiffinder/implant_motif/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vagrant/code/motiffinder/create_datasets/build
+CMAKE_BINARY_DIR = /home/vagrant/code/motiffinder/implant_motif/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/create_datasets/build/CMakeFiles /home/vagrant/code/motiffinder/create_datasets/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/implant_motif/build/CMakeFiles /home/vagrant/code/motiffinder/implant_motif/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/create_datasets/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/implant_motif/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named createdatasets
+# Target rules for targets named implantmotif
 
 # Build rule for target.
-createdatasets: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 createdatasets
-.PHONY : createdatasets
+implantmotif: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 implantmotif
+.PHONY : implantmotif
 
 # fast build rule for target.
-createdatasets/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/build
-.PHONY : createdatasets/fast
+implantmotif/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implantmotif.dir/build.make CMakeFiles/implantmotif.dir/build
+.PHONY : implantmotif/fast
 
-createdatasets.o: createdatasets.cpp.o
-.PHONY : createdatasets.o
+implantmotif.o: implantmotif.cpp.o
+.PHONY : implantmotif.o
 
 # target to build an object file
-createdatasets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/createdatasets.cpp.o
-.PHONY : createdatasets.cpp.o
+implantmotif.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implantmotif.dir/build.make CMakeFiles/implantmotif.dir/implantmotif.cpp.o
+.PHONY : implantmotif.cpp.o
 
-createdatasets.i: createdatasets.cpp.i
-.PHONY : createdatasets.i
+implantmotif.i: implantmotif.cpp.i
+.PHONY : implantmotif.i
 
 # target to preprocess a source file
-createdatasets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/createdatasets.cpp.i
-.PHONY : createdatasets.cpp.i
+implantmotif.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implantmotif.dir/build.make CMakeFiles/implantmotif.dir/implantmotif.cpp.i
+.PHONY : implantmotif.cpp.i
 
-createdatasets.s: createdatasets.cpp.s
-.PHONY : createdatasets.s
+implantmotif.s: implantmotif.cpp.s
+.PHONY : implantmotif.s
 
 # target to generate assembly for a file
-createdatasets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/createdatasets.cpp.s
-.PHONY : createdatasets.cpp.s
+implantmotif.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implantmotif.dir/build.make CMakeFiles/implantmotif.dir/implantmotif.cpp.s
+.PHONY : implantmotif.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... createdatasets"
-	@echo "... createdatasets.o"
-	@echo "... createdatasets.i"
-	@echo "... createdatasets.s"
+	@echo "... implantmotif"
+	@echo "... implantmotif.o"
+	@echo "... implantmotif.i"
+	@echo "... implantmotif.s"
 .PHONY : help
 
 

@@ -54,16 +54,16 @@ RM = /snap/cmake/1288/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vagrant/code/motiffinder/create_datasets/src
+CMAKE_SOURCE_DIR = /home/vagrant/code/motiffinder/implant_motif/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vagrant/code/motiffinder/create_datasets/build
+CMAKE_BINARY_DIR = /home/vagrant/code/motiffinder/implant_motif/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/createdatasets.dir/all
+all: CMakeFiles/implantmotif.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/createdatasets.dir/clean
+clean: CMakeFiles/implantmotif.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/createdatasets.dir
+# Target rules for target CMakeFiles/implantmotif.dir
 
 # All Build rule for target.
-CMakeFiles/createdatasets.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/code/motiffinder/create_datasets/build/CMakeFiles --progress-num=1,2 "Built target createdatasets"
-.PHONY : CMakeFiles/createdatasets.dir/all
+CMakeFiles/implantmotif.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implantmotif.dir/build.make CMakeFiles/implantmotif.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implantmotif.dir/build.make CMakeFiles/implantmotif.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vagrant/code/motiffinder/implant_motif/build/CMakeFiles --progress-num=1,2 "Built target implantmotif"
+.PHONY : CMakeFiles/implantmotif.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/createdatasets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/create_datasets/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/createdatasets.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/create_datasets/build/CMakeFiles 0
-.PHONY : CMakeFiles/createdatasets.dir/rule
+CMakeFiles/implantmotif.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/implant_motif/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/implantmotif.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/implant_motif/build/CMakeFiles 0
+.PHONY : CMakeFiles/implantmotif.dir/rule
 
 # Convenience name for target.
-createdatasets: CMakeFiles/createdatasets.dir/rule
-.PHONY : createdatasets
+implantmotif: CMakeFiles/implantmotif.dir/rule
+.PHONY : implantmotif
 
 # clean rule for target.
-CMakeFiles/createdatasets.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/clean
-.PHONY : CMakeFiles/createdatasets.dir/clean
+CMakeFiles/implantmotif.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implantmotif.dir/build.make CMakeFiles/implantmotif.dir/clean
+.PHONY : CMakeFiles/implantmotif.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
