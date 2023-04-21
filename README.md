@@ -148,7 +148,7 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
 
 	This screenshot shows the last part of the output after executing the last command:
 	
-	<img height="500" src="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/blob/master/images/genmap_example.png" />
+	<img height="450" src="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/blob/master/images/genmap_example.png" />
 
 
 
