@@ -176,7 +176,8 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
 	```sh
    /path/to/create_datasets/build ./createdatasets 20 600 10 2
    ```
-   You will get a fasta-file with the sequences and a csv-file with the correct plantet motif and its positions in the sequences.
+   You will get a fasta-file with the sequences and a csv-file with the correct plantet motif and its positions in the sequences located in the "build"-folder.
+   
    <img height="50" src="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/blob/master/images/syn_planted_motif_example.png" />
 
 
