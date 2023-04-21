@@ -203,7 +203,7 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    ```
    Since the program cannot account for the nucleotide background distribution, the results are suboptimal.
    
-* In order to test the program with real biological motif, run the program implantmotif.cpp with the motif you want implanted as the first argument:
+* In order to test the program with real biological motif implanted in random sequences, execute:
 
 	```sh
    /path/to/implant_motif/build ./implantmotif t n motif 
