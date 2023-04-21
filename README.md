@@ -117,6 +117,11 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    ```sh
    /path/to/projection_motiffinder/build cmake -DCMAKE_BUILD_TYPE=Release ../src
    ```
+   * for creating synthethic datasets
+   ```sh
+   /path/to/create_datasets/build cmake -DCMAKE_BUILD_TYPE=Release ../src
+   ```
+   
 4. Compile the file
    * for the GenMap Motiffinder
    ```sh
@@ -126,6 +131,10 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    ```sh
    /path/to/projection_motiffinder/build make
    ```
+   * for creating synthethic datasets
+   ```sh
+   /path/to/create_datasets/build make
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,6 +142,9 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
+1. The synthethic datasets in the "datasets" folder for each motiffinder can be used to run the program
+
 
 * To run the program with synthetic data, execute:
 
@@ -151,6 +163,21 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
 	<img height="450" src="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/blob/master/images/genmap_example.png" />
 
 
+2. Alternatively, new synthetic datasets can be created by executing:
+
+
+	```sh
+   /path/to/create_datasets/build ./createdatasets t n l d
+   ```
+	where t is the number of the sequences, n is the length of one sequence, l is the length of the motif, and d is the maximum number of mutations the motif can have.
+	
+	For example, to create a dataset with 20 sequences of length 600 with a 10-character long motif with up to 2 mismatches, execute:
+
+	```sh
+   /path/to/create_datasets/build ./createdatasets 20 600 10 2
+   ```
+   You will get a fasta-file with the sequences and a csv-file with the correct plantet motif and its positions in the sequences.
+   <img height="50" src="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/blob/master/images/syn_planted_motif_example" />
 
 
 
