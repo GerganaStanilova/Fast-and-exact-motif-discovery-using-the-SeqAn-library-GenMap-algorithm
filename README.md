@@ -196,11 +196,17 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    ```
    Since the program cannot account for the nucleotide background distribution, the results are suboptimal.
    
-* In order to test the program with real biological motif, run the program implantmotif.cpp:
+* In order to test the program with real biological motif, run the program implantmotif.cpp with the motif you want implanted as the first argument:
 
 	```sh
-   /path/to/build ./motiffinder ../datasets/GCN4_promoter_regions.fasta ../datasets/parameters_10_2.csv
+   /path/to/build ./implantmotif t n motif 
    ```
+   
+   where t is the number of the sequences, n is the length of one sequence, and motif is the sequence you want implanted.
+   
+   
+   
+   
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
