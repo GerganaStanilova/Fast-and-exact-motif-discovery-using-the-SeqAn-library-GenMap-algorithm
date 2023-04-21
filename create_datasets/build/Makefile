@@ -57,10 +57,10 @@ RM = /snap/cmake/1288/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vagrant/code/motiffinder/projection_motiffinder/src
+CMAKE_SOURCE_DIR = /home/vagrant/code/motiffinder/create_datasets/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vagrant/code/motiffinder/projection_motiffinder/build
+CMAKE_BINARY_DIR = /home/vagrant/code/motiffinder/create_datasets/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/projection_motiffinder/build/CMakeFiles /home/vagrant/code/motiffinder/projection_motiffinder/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/create_datasets/build/CMakeFiles /home/vagrant/code/motiffinder/create_datasets/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/projection_motiffinder/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vagrant/code/motiffinder/create_datasets/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named motiffinder
+# Target rules for targets named createdatasets
 
 # Build rule for target.
-motiffinder: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motiffinder
-.PHONY : motiffinder
+createdatasets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 createdatasets
+.PHONY : createdatasets
 
 # fast build rule for target.
-motiffinder/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motiffinder.dir/build.make CMakeFiles/motiffinder.dir/build
-.PHONY : motiffinder/fast
+createdatasets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/build
+.PHONY : createdatasets/fast
 
-motiffinder.o: motiffinder.cpp.o
-.PHONY : motiffinder.o
+createdatasets.o: createdatasets.cpp.o
+.PHONY : createdatasets.o
 
 # target to build an object file
-motiffinder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motiffinder.dir/build.make CMakeFiles/motiffinder.dir/motiffinder.cpp.o
-.PHONY : motiffinder.cpp.o
+createdatasets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/createdatasets.cpp.o
+.PHONY : createdatasets.cpp.o
 
-motiffinder.i: motiffinder.cpp.i
-.PHONY : motiffinder.i
+createdatasets.i: createdatasets.cpp.i
+.PHONY : createdatasets.i
 
 # target to preprocess a source file
-motiffinder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motiffinder.dir/build.make CMakeFiles/motiffinder.dir/motiffinder.cpp.i
-.PHONY : motiffinder.cpp.i
+createdatasets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/createdatasets.cpp.i
+.PHONY : createdatasets.cpp.i
 
-motiffinder.s: motiffinder.cpp.s
-.PHONY : motiffinder.s
+createdatasets.s: createdatasets.cpp.s
+.PHONY : createdatasets.s
 
 # target to generate assembly for a file
-motiffinder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motiffinder.dir/build.make CMakeFiles/motiffinder.dir/motiffinder.cpp.s
-.PHONY : motiffinder.cpp.s
+createdatasets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/createdatasets.dir/build.make CMakeFiles/createdatasets.dir/createdatasets.cpp.s
+.PHONY : createdatasets.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... motiffinder"
-	@echo "... motiffinder.o"
-	@echo "... motiffinder.i"
-	@echo "... motiffinder.s"
+	@echo "... createdatasets"
+	@echo "... createdatasets.o"
+	@echo "... createdatasets.i"
+	@echo "... createdatasets.s"
 .PHONY : help
 
 

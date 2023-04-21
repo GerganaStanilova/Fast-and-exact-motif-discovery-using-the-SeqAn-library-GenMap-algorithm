@@ -9,9 +9,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "CMakeFiles/3.26.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeSystem.cmake"
-  "/home/vagrant/code/motiffinder/projection_motiffinder/seqan/util/cmake/FindSeqAn.cmake"
-  "/home/vagrant/code/motiffinder/projection_motiffinder/seqan/util/cmake/seqan-config.cmake"
-  "/home/vagrant/code/motiffinder/projection_motiffinder/src/CMakeLists.txt"
+  "/home/vagrant/code/motiffinder/create_datasets/seqan/util/cmake/FindSeqAn.cmake"
+  "/home/vagrant/code/motiffinder/create_datasets/seqan/util/cmake/seqan-config.cmake"
+  "/home/vagrant/code/motiffinder/create_datasets/src/CMakeLists.txt"
   "/snap/cmake/1288/share/cmake-3.26/Modules/CMakeCXXInformation.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/CMakeGenericSystem.cmake"
@@ -21,13 +21,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/cmake/1288/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake"
-  "/snap/cmake/1288/share/cmake-3.26/Modules/CheckLibraryExists.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/Compiler/GNU.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/FindPackageMessage.cmake"
-  "/snap/cmake/1288/share/cmake-3.26/Modules/FindThreads.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/FindZLIB.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake"
   "/snap/cmake/1288/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake"
@@ -50,5 +48,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/motiffinder.dir/DependInfo.cmake"
+  "CMakeFiles/createdatasets.dir/DependInfo.cmake"
   )

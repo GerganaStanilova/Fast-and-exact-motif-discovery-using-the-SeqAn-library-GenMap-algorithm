@@ -37,33 +37,21 @@ int hammingDist(DnaString str1, DnaString str2) {
     return count;
 }
 
-int main()
+int main(int argc, char const ** argv)
 {
-    
+
 
     //t sequences each of length n
-    int t = 20;
-    int n = 600;
-    
-    //(15,4)
-    //int motif_length = 15; //l
-    //int d = 4;
+    int t = stoi(argv[1]);
+    int n = stoi(argv[2]);
+    //int t = 20;
+    //int n = 600;
 
-    //(14,4)
-    //int motif_length = 14; //l
-    //int d = 4;
-    
-    //(16,5) 
-    //int motif_length = 16; //l
-    //int d = 5;
-
-    //(18,6)
-    //int motif_length = 18; //l
-    //int d = 6;
-    
-    //smaller dataset
-    int motif_length = 11; //l
-    int d = 2;
+    //motif
+    int motif_length = stoi(argv[3]);
+    int d = stoi(argv[4]);
+    //int motif_length = 11; //l
+    //int d = 2;
 
     //for the sake of reproducibility
     std::mt19937 rng;
@@ -87,7 +75,7 @@ int main()
     //save the planted motif in a file
     ofstream planted_motif_File;
     ostringstream ossP;
-    ossP << "n_planted_motif_" << motif_length << "_" << d << ".csv";
+    ossP << "syn_planted_motif_" << motif_length << "_" << d << ".csv";
     string planted_motif_FileName = ossP.str();
     planted_motif_File.open (planted_motif_FileName);
     planted_motif_File << "seq\tpos\tmotif\tmutations\tmut_pos" << endl;
@@ -97,7 +85,7 @@ int main()
     //save the sequences in a file
     ofstream fastaFile;
     ostringstream oss;
-    oss << "n_exampleDataset_" << motif_length << "_" << d << ".fasta";
+    oss << "syn_planted_motif_" << motif_length << "_" << d << ".fasta";
     string fastaFileName = oss.str();
     fastaFile.open (fastaFileName);
     
