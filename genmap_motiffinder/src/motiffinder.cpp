@@ -1023,8 +1023,8 @@ int main(int argc, char const ** argv) {
         times.push_back(chrono::duration_cast<chrono::milliseconds>(end - start).count() / m);
 
         if(d < 5) printPositions(num_of_seqs, pattern);
-        //if(argc > 3) printPerformanceCoefficient(pattern);
-        if(argc > 5) printPerformanceCoefficient(pattern);
+        if(argc > 3) printPerformanceCoefficient(pattern);
+
 
         done_datasets++; // One dataset is processed
         clear(sequences); foundMatches.clear();	seqidx = 0; // reset
