@@ -176,24 +176,31 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
 	```sh
    /path/to/create_datasets/build ./createdatasets 20 600 10 2
    ```
-   You will get a fasta-file with the sequences and a csv-file with the correct plantet motif and its positions in the sequences located in the "build"-folder.
+   You will get a fasta-file with the sequences and a csv-file with the correct plantet motif and its positions in the sequences located in the "build"-folder:
    
    <img height="50" src="https://github.com/GerganaStanilova/Fast-and-exact-motif-discovery-using-the-SeqAn-library-GenMap-algorithm/blob/master/images/syn_planted_motif_example.png" />
 
 
-
-* To run the program with biological data, execute:
+3. To run the program with biological data, execute:
 
    ```sh
    /path/to/build ./motiffinder ../path/to/the/synthetic/fasta/file  ../path/to/the/parameters/csv/file 
    ```
    
-* An example with the GCN4 promoter regions would look like this:
+* In the folder "datasets" there are two files (GCN4_promoter_regions.fasta and GAL4_promoter_regions.fasta) which contain real experimentally verified promoter regions.
+
+	For example running the program with the GCN4 promoter regions would look like this:
 
 	```sh
-   /path/to/build ./motiffinder ../datasets/GCN4_promoters/GCN4_promoter_regions.fasta ../datasets/parameters_10_2.csv
+   /path/to/build ./motiffinder ../datasets/GCN4_promoter_regions.fasta ../datasets/parameters_10_2.csv
    ```
+   Since the program cannot account for the nucleotide background distribution, the results are suboptimal.
+   
+* In order to test the program with real biological motif, run the program implantmotif.cpp:
 
+	```sh
+   /path/to/build ./motiffinder ../datasets/GCN4_promoter_regions.fasta ../datasets/parameters_10_2.csv
+   ```
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
