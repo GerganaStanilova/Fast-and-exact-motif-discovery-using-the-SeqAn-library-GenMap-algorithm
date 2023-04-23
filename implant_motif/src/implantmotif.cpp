@@ -174,52 +174,58 @@ int main(int argc, char const ** argv)
     printMatrix(normalized_gcn4_jaspar_matrix);
 
 
-    // Generate motifs
-    vector<string> motifs;
-    for (int i = 0; i < t; i++) {
-        motifs.push_back(generateRandomMotifFromMatrix(normalized_gcn4_jaspar_matrix));
-    }
 
-    // Generate random sequences
-    vector<string> sequences;
-    for (int i = 0; i < t; i++) {
-        sequences.push_back(generateRandomSequence(n));
-    }
+    /*
+    + Generate motifs
+    + Calculate consensus sequence
+    + Create and open files
+    + Add head row
+    + Add X X consensus
+    + For each sequence
+        + Generate a random 600nt sequence
+        + Generate random number
+        Implant the corresponding motif
+        Save the sequences in fasta
+        Save positions and motifs in csv
+    Close files*/
 
-    // Implant motifs in each sequence and record positions and motifs
-    vector<tuple<int, int, string>> motif_pos;
-    for (int i = 0; i < t; i++) {
-        int pos = rand() % (n - 20); // choose a random position to implant the motif
-
-        for (int i = 0; i < motifs.size(); i++) {
-            string motif = motifs[i];
-            sequences[i].replace(pos, 20, motif); // implant motif
-            motif_pos.push_back(make_tuple(i, pos, motif)); // record position and motif
+    for(int j = 1; j <= 10; j++){
+        // Generate motifs
+        vector<string> motifs;
+        for (int i = 0; i < t; i++) {
+            motifs.push_back(generateRandomMotifFromMatrix(normalized_gcn4_jaspar_matrix));
         }
 
+        string consensus = getConsensusSequence(motifs);
+
+
+        ofstream fastaFile("gcn4_synthetic_sequences_" + to_string(j) + ".fasta");
+        ofstream csvFile("gcn4_implanted_motifs_" + to_string(j) + ".csv");
+        csvFile << "seq\tpos\tmotif" << endl;
+        csvFile << "X\tX\t" << consensus << endl; // write consensus sequence
+
+        vector<tuple<int, int, string>> motif_pos;
+        for (int i = 0; i < t; i++){
+            string randomseq = generateRandomSequence(n);
+            int pos = rand() % (n - 20); // choose a random position to implant the motif
+            // Implant motifs in each sequence and record positions and motifs
+            string motif = motifs[i];
+            randomseq.replace(pos, 20, motif);
+            motif_pos.push_back(make_tuple(i, pos, motif));
+            // Write sequences to FASTA file
+            fastaFile << ">seq_" << i << endl;
+            fastaFile << randomseq << endl;
+
+        }
+        // Write motifs to CSV file
+        for (auto m : motif_pos) {
+            csvFile << get<0>(m) << "\t" << get<1>(m) << "\t" << get<2>(m) << endl;
+        }
+
+        fastaFile.close();
+        csvFile.close();
+
     }
-
-    // Write sequences to FASTA file
-    ofstream fastaFile("gcn4_sequences.fasta");
-    for (int i = 0; i < t; i++) {
-        fastaFile << ">seq_" << i << endl;
-        fastaFile << sequences[i] << endl;
-    }
-    fastaFile.close();
-
-    string csvFilePath = "motifs.csv";
-    string consensus = getConsensusSequence(motifs);
-
-    // Write motifs to CSV file
-    ofstream csvFile("implanted_motifs.csv");
-    csvFile << "seq\tpos\tmotif" << endl;
-    csvFile << "X\tX\t" << consensus << endl; // write consensus sequence
-    for (auto m : motif_pos) {
-        csvFile << get<0>(m) << "\t" << get<1>(m) << "\t" << get<2>(m) << endl;
-    }
-    csvFile.close();
-
-
 
 
 
