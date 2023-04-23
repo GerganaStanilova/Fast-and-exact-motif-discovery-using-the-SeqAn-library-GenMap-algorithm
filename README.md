@@ -203,13 +203,13 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    ```
    Since the program cannot account for the nucleotide background distribution, the results are suboptimal.
    
-* In order to test the program with real biological motif implanted in random sequences, execute:
+* To generate new random background sequences and implant the motif of GCN4, execute:
 
 	```sh
-   /path/to/implant_motif/build ./implantmotif t n motif 
+   /path/to/implant_motif/build ./implantmotif t n 
    ```
    
-   where t is the number of the sequences, n is the length of one sequence, and motif is the sequence to be implanted.
+   where t is the number of the sequences and n is the length of one sequence.
    
    
    
