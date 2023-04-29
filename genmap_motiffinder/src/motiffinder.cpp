@@ -55,7 +55,7 @@ void load(vector<value_t> & vec, string path)
  * @param mismatches
  * @return
  */
-vector<uint8_t> getGenMapFrequencyVector(string path_filename, string filename, int motif_length, int mismatches) {
+/*vector<uint8_t> getGenMapFrequencyVector(string path_filename, string filename, int motif_length, int mismatches) {
     //mismatches = 2;
     //$ ./genmap index -F /path/to/fasta.fasta -I /path/to/index/folder
     vector<uint8_t> frequency_vector;
@@ -81,7 +81,7 @@ vector<uint8_t> getGenMapFrequencyVector(string path_filename, string filename, 
     //cout << "length of 1. fv: " << length(frequency_vector) << endl;
     //cout << "./_output_/" << filename << ".freq8" << endl;
     return frequency_vector;
-}
+}*/
 
 
 vector<uint8_t> getGenMapFrequencyVectorOPS(string path_to_directory, string filename, int motif_length, int mismatches) {
@@ -796,11 +796,8 @@ DnaString runGenMap(int motif_length, vector<pair<int,int>> genmap_lmers_startin
     }
 
 
-    double lmer_performance_coefficient = 0;
-    int exact_matches = 0;
-    //double genmap_lmer_performance_coefficient = calculatePerformanceCoefficient(best_genmap_conseq.first, lmer_performance_coefficient, exact_matches);
+
     cout << "searched consensus sequence: [" << best_genmap_conseq.first << "] with a score of " << best_genmap_conseq.second << endl;
-    //cout << "The performance coefficient is " << roundWithPrecision(genmap_lmer_performance_coefficient, 2) << "." << endl;
     return best_genmap_conseq.first;
 
 };
@@ -964,7 +961,7 @@ int main(int argc, char const ** argv) {
         /*
          * Compute the mappbility/get genmap frequency vector
          */
-        vector<uint8_t> genmap_frequency_vector = getGenMapFrequencyVector(datasetName + no, file_without_suffix + no, l, d);
+        //vector<uint8_t> genmap_frequency_vector = getGenMapFrequencyVector(datasetName + no, file_without_suffix + no, l, d);
 
 
         unsigned num_of_seqs = numSeqs(faiIndex);
