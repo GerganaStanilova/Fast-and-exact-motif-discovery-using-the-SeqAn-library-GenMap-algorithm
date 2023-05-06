@@ -1,0 +1,257 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.2 (Release date: Sun Jan 29 10:33:12 2023 -0800)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= GCN4_promoter_regions.fasta
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+ADE8                     1.0000    600  AGP1                     1.0000    600  
+ARG4                     1.0000    600  ATR1                     1.0000    600  
+GAP1                     1.0000    600  HIS4                     1.0000    600  
+HIS5                     1.0000    600  LEU3                     1.0000    600  
+LPD1                     1.0000    600  LYS14                    1.0000    600  
+MET28                    1.0000    600  MTD1                     1.0000    600  
+SHM2                     1.0000    600  TPK1                     1.0000    600  
+TPK2                     1.0000    600  URE2                     1.0000    600  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme GCN4_promoter_regions.fasta -dna -oc . -nostatus -time 14400 -mod oops -nmotifs 1 -minw 10 -maxw 10 -objfun classic -markov_order 0 
+
+model:  mod=          oops    nmotifs=         1    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: +
+width:  minw=           10    maxw=           10
+nsites: minsites=       16    maxsites=       16    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            9600    N=              16
+sample: seed=            0    hsfrac=          0
+        searchsize=   9600    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.308 C 0.197 G 0.185 T 0.31 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.308 C 0.197 G 0.185 T 0.31 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF TTTTTTTTYT MEME-1	width =  10  sites =  16  llr = 142  E-value = 9.3e+001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif TTTTTTTTYT MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::::1:
+pos.-specific     C  :13::1:333
+probability       G  ::::::::1:
+matrix            T  a97aa9a767
+
+         bits    2.4           
+                 2.2           
+                 1.9           
+                 1.7 *  ** *   
+Relative         1.5 ** ** *   
+Entropy          1.2 ** ****   
+(12.8 bits)      1.0 ******** *
+                 0.7 ******** *
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           TTTTTTTTTT
+consensus              C    CCC
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTTTTYT MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+TPK2                        352  8.20e-06 GGCCAATTTG TTTTTTTTTT ATGTAATAAA
+TPK1                        475  8.20e-06 GACCCTATAC TTTTTTTTTT GTTTGGCTTG
+MET28                       394  8.20e-06 CGTGACTTAT TTTTTTTTTT TGGTTTTAGG
+HIS5                         48  8.20e-06 CTTCATCAAT TTTTTTTTTT TCTGCCGCAT
+ARG4                        343  8.20e-06 CTAGAACAGT TTTTTTTTTT CGATTATTTG
+HIS4                        586  1.34e-05 GTTTACAAAA TTTTTTTTCT GAATA     
+URE2                        283  2.90e-05 CAGCCTGGAA TTTTTTTTTC AATTCTCGCC
+GAP1                         33  2.90e-05 GTTTTAGGAC TTTTTTTTTC AGCCGATCGC
+AGP1                          2  3.90e-05          C TTTTTTTCCT TGACCGGCAT
+ATR1                        149  4.89e-05 TGTTTCTCCC TTTTTTTCTC CGATTTCTTT
+ADE8                        100  4.89e-05 AGTTGGAGTC TTCTTTTCTT GTGAAATATG
+MTD1                        264  5.52e-05 AGACAATTTA TTCTTTTCCT AGTCCAAGTC
+LYS14                       115  5.52e-05 TGTCACCATC TTCTTTTCCT GCAAGCCAGA
+LEU3                        587  1.31e-04 TTAATACAAA TTCTTTTTGC AATT      
+LPD1                        126  2.27e-04 AGAGATTTAA TTTTTCTTAC CACATTGTTT
+SHM2                        523  2.38e-04 CAGTAATCTT TCCTTCTTCT AGTGTAACCT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTTTTYT MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+TPK2                              8.2e-06  351_[+1]_239
+TPK1                              8.2e-06  474_[+1]_116
+MET28                             8.2e-06  393_[+1]_197
+HIS5                              8.2e-06  47_[+1]_543
+ARG4                              8.2e-06  342_[+1]_248
+HIS4                              1.3e-05  585_[+1]_5
+URE2                              2.9e-05  282_[+1]_308
+GAP1                              2.9e-05  32_[+1]_558
+AGP1                              3.9e-05  1_[+1]_589
+ATR1                              4.9e-05  148_[+1]_442
+ADE8                              4.9e-05  99_[+1]_491
+MTD1                              5.5e-05  263_[+1]_327
+LYS14                             5.5e-05  114_[+1]_476
+LEU3                              0.00013  586_[+1]_4
+LPD1                              0.00023  125_[+1]_465
+SHM2                              0.00024  522_[+1]_68
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTTTTYT MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF TTTTTTTTYT width=10 seqs=16
+TPK2                     (  352) TTTTTTTTTT  1 
+TPK1                     (  475) TTTTTTTTTT  1 
+MET28                    (  394) TTTTTTTTTT  1 
+HIS5                     (   48) TTTTTTTTTT  1 
+ARG4                     (  343) TTTTTTTTTT  1 
+HIS4                     (  586) TTTTTTTTCT  1 
+URE2                     (  283) TTTTTTTTTC  1 
+GAP1                     (   33) TTTTTTTTTC  1 
+AGP1                     (    2) TTTTTTTCCT  1 
+ATR1                     (  149) TTTTTTTCTC  1 
+ADE8                     (  100) TTCTTTTCTT  1 
+MTD1                     (  264) TTCTTTTCCT  1 
+LYS14                    (  115) TTCTTTTCCT  1 
+LEU3                     (  587) TTCTTTTTGC  1 
+LPD1                     (  126) TTTTTCTTAC  1 
+SHM2                     (  523) TCCTTCTTCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTTTTYT MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 9456 bayes= 9.20457 E= 9.3e+001 
+ -1064  -1064  -1064    169 
+ -1064   -165  -1064    160 
+ -1064     67  -1064    115 
+ -1064  -1064  -1064    169 
+ -1064  -1064  -1064    169 
+ -1064    -65  -1064    150 
+ -1064  -1064  -1064    169 
+ -1064     67  -1064    115 
+  -230     67   -157     86 
+ -1064     67  -1064    115 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTTTTYT MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 16 E= 9.3e+001 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.062500  0.000000  0.937500 
+ 0.000000  0.312500  0.000000  0.687500 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.125000  0.000000  0.875000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.312500  0.000000  0.687500 
+ 0.062500  0.312500  0.062500  0.562500 
+ 0.000000  0.312500  0.000000  0.687500 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif TTTTTTTTYT MEME-1 regular expression
+--------------------------------------------------------------------------------
+TT[TC]TTTT[TC][TC][TC]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  0.55 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+ADE8                             2.85e-02  99_[+1(4.89e-05)]_491
+AGP1                             2.28e-02  1_[+1(3.90e-05)]_435_[+1(9.76e-05)]_\
+    144
+ARG4                             4.83e-03  341_[+1(8.20e-06)]_249
+ATR1                             2.85e-02  148_[+1(4.89e-05)]_442
+GAP1                             1.70e-02  32_[+1(2.90e-05)]_424_\
+    [+1(8.83e-05)]_124
+HIS4                             7.89e-03  585_[+1(1.34e-05)]_5
+HIS5                             4.83e-03  46_[+1(8.20e-06)]_323_\
+    [+1(1.34e-05)]_211
+LEU3                             7.42e-02  600
+LPD1                             1.25e-01  600
+LYS14                            3.21e-02  114_[+1(5.52e-05)]_476
+MET28                            4.83e-03  392_[+1(8.20e-06)]_198
+MTD1                             3.21e-02  263_[+1(5.52e-05)]_327
+SHM2                             1.31e-01  600
+TPK1                             4.83e-03  474_[+1(8.20e-06)]_116
+TPK2                             4.83e-03  296_[+1(2.90e-05)]_45_\
+    [+1(8.20e-06)]_239
+URE2                             1.70e-02  282_[+1(2.90e-05)]_308
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (1) found.
+********************************************************************************
+
+CPU: noble-meme.grid.gs.washington.edu
+
+********************************************************************************
