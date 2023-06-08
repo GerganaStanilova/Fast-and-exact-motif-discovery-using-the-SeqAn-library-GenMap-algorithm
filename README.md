@@ -213,7 +213,7 @@ Install GenMap following the instructions on the GenMap <a href="https://github.
    
 
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
