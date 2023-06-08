@@ -231,7 +231,7 @@ Project Link: [https://github.com/GerganaStanilova/Fast-and-exact-motif-discover
 ## Acknowledgments
 
 
-* [SeqAn 3 - The modern C++ library for sequence analysis.](https://github.com/seqan/seqan3)
+* [SeqAn 3 - The modern C++ library for sequence analysis](https://github.com/seqan/seqan3)
 * [GenMap - Fast and Exact Computation of Genome Mappability](https://github.com/cpockrandt/genmap)
 * [GitGub README Template](https://github.com/othneildrew/Best-README-Template)
 
