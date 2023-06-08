@@ -53,16 +53,16 @@ RM = "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src
+CMAKE_SOURCE_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/motiffinder.dir/all
+all: CMakeFiles/implantmotif.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/motiffinder.dir/clean
+clean: CMakeFiles/implantmotif.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/motiffinder.dir
+# Target rules for target CMakeFiles/implantmotif.dir
 
 # All Build rule for target.
-CMakeFiles/motiffinder.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\motiffinder.dir\build.make CMakeFiles/motiffinder.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\motiffinder.dir\build.make CMakeFiles/motiffinder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target motiffinder"
-.PHONY : CMakeFiles/motiffinder.dir/all
+CMakeFiles/implantmotif.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\implantmotif.dir\build.make CMakeFiles/implantmotif.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\implantmotif.dir\build.make CMakeFiles/implantmotif.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target implantmotif"
+.PHONY : CMakeFiles/implantmotif.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/motiffinder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/motiffinder.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/motiffinder.dir/rule
+CMakeFiles/implantmotif.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/implantmotif.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/implantmotif.dir/rule
 
 # Convenience name for target.
-motiffinder: CMakeFiles/motiffinder.dir/rule
-.PHONY : motiffinder
+implantmotif: CMakeFiles/implantmotif.dir/rule
+.PHONY : implantmotif
 
 # clean rule for target.
-CMakeFiles/motiffinder.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\motiffinder.dir\build.make CMakeFiles/motiffinder.dir/clean
-.PHONY : CMakeFiles/motiffinder.dir/clean
+CMakeFiles/implantmotif.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\implantmotif.dir\build.make CMakeFiles/implantmotif.dir/clean
+.PHONY : CMakeFiles/implantmotif.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

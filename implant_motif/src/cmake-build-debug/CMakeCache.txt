@@ -133,7 +133,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=motiffinder
+CMAKE_PROJECT_NAME:STATIC=implantmotif
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/ranlib.exe
@@ -229,6 +229,15 @@ ZLIB_LIBRARY_RELEASE:FILEPATH=ZLIB_LIBRARY_RELEASE-NOTFOUND
 
 //Path to a file.
 _SEQAN_BASEDIR:PATH=C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/implant_motif/seqan/include
+
+//Value Computed by CMake
+implantmotif_BINARY_DIR:STATIC=C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/implant_motif/src/cmake-build-debug
+
+//Value Computed by CMake
+implantmotif_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+implantmotif_SOURCE_DIR:STATIC=C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/implant_motif/src
 
 //Value Computed by CMake
 motiffinder_BINARY_DIR:STATIC=C:/Users/Geri/Documents/vagrant/bt/env/code/motiffinder/implant_motif/src/cmake-build-debug

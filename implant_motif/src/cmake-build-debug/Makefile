@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src
+CMAKE_SOURCE_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src\cmake-build-debug\CMakeFiles C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\projection_motiffinder\src\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Geri\Documents\vagrant\bt\env\code\motiffinder\implant_motif\src\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,41 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named motiffinder
+# Target rules for targets named implantmotif
 
 # Build rule for target.
-motiffinder: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 motiffinder
-.PHONY : motiffinder
+implantmotif: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 implantmotif
+.PHONY : implantmotif
 
 # fast build rule for target.
-motiffinder/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\motiffinder.dir\build.make CMakeFiles/motiffinder.dir/build
-.PHONY : motiffinder/fast
+implantmotif/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\implantmotif.dir\build.make CMakeFiles/implantmotif.dir/build
+.PHONY : implantmotif/fast
 
-motiffinder.obj: motiffinder.cpp.obj
-.PHONY : motiffinder.obj
+implantmotif.obj: implantmotif.cpp.obj
+.PHONY : implantmotif.obj
 
 # target to build an object file
-motiffinder.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\motiffinder.dir\build.make CMakeFiles/motiffinder.dir/motiffinder.cpp.obj
-.PHONY : motiffinder.cpp.obj
+implantmotif.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\implantmotif.dir\build.make CMakeFiles/implantmotif.dir/implantmotif.cpp.obj
+.PHONY : implantmotif.cpp.obj
 
-motiffinder.i: motiffinder.cpp.i
-.PHONY : motiffinder.i
+implantmotif.i: implantmotif.cpp.i
+.PHONY : implantmotif.i
 
 # target to preprocess a source file
-motiffinder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\motiffinder.dir\build.make CMakeFiles/motiffinder.dir/motiffinder.cpp.i
-.PHONY : motiffinder.cpp.i
+implantmotif.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\implantmotif.dir\build.make CMakeFiles/implantmotif.dir/implantmotif.cpp.i
+.PHONY : implantmotif.cpp.i
 
-motiffinder.s: motiffinder.cpp.s
-.PHONY : motiffinder.s
+implantmotif.s: implantmotif.cpp.s
+.PHONY : implantmotif.s
 
 # target to generate assembly for a file
-motiffinder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\motiffinder.dir\build.make CMakeFiles/motiffinder.dir/motiffinder.cpp.s
-.PHONY : motiffinder.cpp.s
+implantmotif.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\implantmotif.dir\build.make CMakeFiles/implantmotif.dir/implantmotif.cpp.s
+.PHONY : implantmotif.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... motiffinder
-	@echo ... motiffinder.obj
-	@echo ... motiffinder.i
-	@echo ... motiffinder.s
+	@echo ... implantmotif
+	@echo ... implantmotif.obj
+	@echo ... implantmotif.i
+	@echo ... implantmotif.s
 .PHONY : help
 
 
